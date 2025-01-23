@@ -14,8 +14,10 @@ export const About = (props) => {
                     </p>
 
                 </div>
-                <div>
-                    
+                <div className={classes.card}>
+                
+
+
                 </div>
             </div>
 

@@ -1,7 +1,15 @@
 .about {
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px
+}
+.card {
+    background: #040b14;
+    width: 1000px;
+    height: 500px;
+    box-shadow: 2px 4px 5px 5px gainsboro;
+    
 }
