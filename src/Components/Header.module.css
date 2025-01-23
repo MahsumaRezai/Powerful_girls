@@ -1,0 +1,14 @@
+.header {
+    background: #040b14;
+    width: 100%;
+    min-height: 80vh;
+
+}
+.headertext {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+
+}
