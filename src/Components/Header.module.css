@@ -1,14 +1,8 @@
-.header {
-    background: #040b14;
-    width: 100%;
-    min-height: 80vh;
-
-}
-.headertext {
+/* Styling for the main section */
+.main {
+    flex-grow: 1;
+    background-color: #040b14;
+    padding: 20px;
+    box-sizing: border-box;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
-
-}
+  }

@@ -12,11 +12,18 @@
 .header {
   display: flex;
   flex-direction: column;
-  background-color: lightblue;
-  width: 200px;
+  background-color:whitesmoke;
+  width: 300px;
   padding: 10px;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
+  border-right:1px solid gray;
+  position: sticky
+
+  
+}
+.list {
+  color: white;
 }
 
 /* Header content: hamburger icon and title */
@@ -38,11 +45,14 @@ h1 {
 }
 
 /* Navigation menu */
+
 .nav {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
   display: none;
+  color: white;
+
 }
 
 .nav.open {
@@ -68,12 +78,15 @@ h1 {
 /* Styling for the main section */
 .main {
   flex-grow: 1;
-  background-color: lightgray;
+  background-color: #040b14;
   padding: 20px;
   box-sizing: border-box;
+  color: white;
 }
 
 /* Media query for small screens (mobile view) */
+
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;  /* Stack the header and main section vertically */
@@ -86,6 +99,8 @@ h1 {
 
   .hamburger-icon {
     display: block;  /* Show the hamburger icon */
+    background: darkcyan;
+    
   }
 
   .nav {
@@ -97,7 +112,7 @@ h1 {
     position: absolute;
     top: 50px; /* Adjust depending on header height */
     left: 0;
-    background-color: lightblue;
+    background-color: whitesmoke;
     width: 100%;
   }
 

@@ -1,16 +1,15 @@
 
 import React, { useState } from 'react';
 import { Fragment } from 'react';
-import  './Head.css'
+import './Head.css'
+
 
 export function Head() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(true);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
-
     return (
         <Fragment>
             <div className="container">
@@ -19,10 +18,10 @@ export function Head() {
                         <button className="menu-toggle" onClick={toggleMenu}>
                             <span className="hamburger-icon">☰</span>
                         </button>
-                        <h1>Header</h1>
+
                     </div>
                     <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-                        <ul>
+                        <ul className="list">
                             <li><a href="/">Home</a></li>
                             <li><a href="/">About</a></li>
                             <li><a href="/">Services</a></li>
@@ -31,8 +30,8 @@ export function Head() {
                     </nav>
                 </header>
                 <main className="main">
-                    <h2>Main Section</h2>
-                    <p>This is the main content area.</p>
+                    <h2 className="title">Masoumeh Nawrozi</h2>
+
                 </main>
             </div>
 
