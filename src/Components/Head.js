@@ -18,9 +18,11 @@ const Head = () => {
             <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                 <ul className="list">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#services">خدمات</a></li>
-                    <li><a href="#about">درباره</a></li>
-                    <li><a href="#contact">تماس</a></li>
+                    <li><a href="#services">About</a></li>
+                    <li><a href="#about">Resume</a></li>
+                    <li><a href="#contact">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
                 </ul>
             </nav>
 
