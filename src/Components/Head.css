@@ -1,122 +1,129 @@
-
-
-/* Container for the header and main section */
-.container {
-  display: flex;
-  flex-direction: row;  /* Aligns header and main section horizontally by default */
-  width: 100%;
-  height: 100vh;
-}
-
-/* Styling for the header */
+/* src/Header.css */
 .header {
-  display: flex;
-  flex-direction: column;
-  background-color:whitesmoke;
-  width: 300px;
-  padding: 10px;
-  box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
-  border-right:1px solid gray;
-  position: sticky
-
-  
-}
-.list {
-  color: white;
-}
-
-/* Header content: hamburger icon and title */
-.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 40px;
+  background-color: #333;
+  color: white;
+  position: relative;
 }
 
-.hamburger-icon {
+.logo {
   font-size: 30px;
-  cursor: pointer;
-  display: none;
+  font-weight: bold;
 }
 
-h1 {
-  margin: 0;
-  font-size: 20px;
-}
-
-/* Navigation menu */
-
-.nav {
+.nav-links ul {
   display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  display: none;
-  color: white;
-
-}
-
-.nav.open {
-  display: block;
-}
-
-.nav ul {
-  list-style: none;
-  padding: 0;
+  list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
-.nav li {
-  margin: 10px 0;
+.nav-links li {
+  margin: 0 20px;
 }
 
-.nav a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-
-/* Styling for the main section */
-.main {
-  flex-grow: 1;
-  background-color: #040b14;
-  padding: 20px;
-  box-sizing: border-box;
+.nav-links a {
   color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
-/* Media query for small screens (mobile view) */
+.nav-links a:hover {
+  color: #f1c40f;
+}
 
+/* دکمه منوی همبرگر */
+.menu-button {
+  display: none;
+  background-color: #f1c40f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;  /* Stack the header and main section vertically */
-  }
+.menu-button:hover {
+  background-color: #e67e22;
+}
 
+/* برای صفحه‌های بزرگ (دسکتاپ) */
+@media screen and (min-width: 769px) {
   .header {
-    width: 100%;  /* Make the header take full width */
-    position: relative; /* Allow absolute positioning of the hamburger icon */
+    padding: 20px 40px;
   }
 
-  .hamburger-icon {
-    display: block;  /* Show the hamburger icon */
-    background: darkcyan;
+  .logo {
+    font-size: 30px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  .nav-links li {
+    margin: 0 20px;
+  }
+
+  .menu-button {
+    display: none; /* مخفی کردن دکمه منوی همبرگر در صفحه‌های بزرگ */
+  }
+}
+
+/* برای صفحه‌های کوچک (موبایل) */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+   
     
   }
 
-  .nav {
-    width: 100%;
+  .logo {
+    font-size: 24px;
   }
 
-  /* When the header is in 'open' state, show the nav */
-  .nav.open {
-    position: absolute;
-    top: 50px; /* Adjust depending on header height */
+  .nav-links {
+    position: fixed;
+    top: 0;
     left: 0;
-    background-color: whitesmoke;
     width: 100%;
+    height: 10vh;
+    background-color: #333;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
   }
 
-  .nav li {
-    margin: 15px 0;
+  .nav-links.active {
+    transform: translateX(0); /* منو باز می‌شود */
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+
+  .menu-button {
+    display: block; /* نمایش دکمه منوی همبرگر */
+  }
+
+  .nav-links a {
+    font-size: 20px;
   }
 }

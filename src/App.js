@@ -1,12 +1,12 @@
 
 import { Fragment } from 'react';
-import { Head } from './Components/Head';
 import { About } from './Components/About';
+import Head from './Components/Head';
 
 const App = (props) => {
     return (
         <Fragment>
-            <Head />
+            <Head/>
             <About/>
 
         </Fragment>
