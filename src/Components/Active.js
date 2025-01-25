@@ -9,36 +9,48 @@ export const Active = (props) => {
 
             <div className={classes.wapperskill}>
                 <div className={classes.skill}>
+                    <p>HTML</p>
+                </div>
+                <div className={classes.skill}>
+                    <p>CSS</p>
+
 
                 </div>
                 <div className={classes.skill}>
+                    <p>SCSS</p>
 
                 </div>
                 <div className={classes.skill}>
+                    <p>JAVASCRIPT</p>
 
                 </div>
                 <div className={classes.skill}>
-
-                </div>
-                <div className={classes.skill}>
+                    <p>Type script</p>
 
                 </div>
 
             </div>
             <div className={classes.wapperskill}>
                 <div className={classes.skill}>
+                    <p>React js</p>
 
                 </div>
                 <div className={classes.skill}>
+                    <p>Php</p>
 
                 </div>
                 <div className={classes.skill}>
+                    <p>
+                        Next js</p>
 
                 </div>
                 <div className={classes.skill}>
+                    <p>Bootstrap</p>
 
                 </div>
                 <div className={classes.skill}>
+                    <p>
+                        Tailwind</p>
 
                 </div>
 

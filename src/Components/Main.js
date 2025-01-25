@@ -14,9 +14,8 @@ export const Main = (props) => {
                          interfaces and web development.</span>
                 </div>
                 <div>
-
                         <img src={img} alt="" className={classes.triangle}></img>
-                   
+                
                     <Button />
 
                 </div>
