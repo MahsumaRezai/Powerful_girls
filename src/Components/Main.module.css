@@ -11,7 +11,9 @@
 
 .triangle{
    
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    border: 20px solid yellowgreen;
+    height: 550px;
            
 }
 .textmain {
