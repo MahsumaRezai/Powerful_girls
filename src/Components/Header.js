@@ -5,8 +5,7 @@ export const Header = (props) => {
         <Fragment>
             <div className={classes.header}>
                 <div className={classes.headertext}>
-                  
-
+                
                 </div>
 
             </div>
