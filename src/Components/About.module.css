@@ -7,9 +7,8 @@
     padding: 30px
 }
 .card {
-    height: 500px;
     box-shadow: 2px 4px 5px 5px gainsboro;
-    padding:20px 30px;
+    padding:40px 30px;
     width: max-content;
     display: flex;
     flex-direction: row;
@@ -42,7 +41,9 @@ a {
 }
 .info h1 {
     font-size: 25px;
+    
 }
+
 .info span {
     font-size: 17px;
 
@@ -63,10 +64,30 @@ a {
     padding: 30px;
 
 }
+
 .textabout h1 {
-    font-size: 40px
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.textabout h1:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 5px;
+    background: yellowgreen;
+    left: 0;
+    bottom: 0;
 }
 .textabout p {
     font-size: 18px;
     line-height: 1.625;
+}
+@media screen and (max-width:768px){
+    .card {
+        flex-direction: column
+    }
 }
