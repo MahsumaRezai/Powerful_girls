@@ -22,7 +22,7 @@
     justify-items: center;
     justify-content: center;
     gap: 30px;
-    color: wheat;
+    color:whitesmoke;
     
 }
 .textmain p {
@@ -43,6 +43,17 @@
     font-weight: bold
 }
 /* res */
+@media screen and (max-width: 1280px) {
+    .main {
+      padding: 40px 20px;
+      flex-direction: column
+    }
+    .triangle {
+        height: 250px;
+    }
+     
+}
+
 @media screen and (max-width: 1280px) {
     .main {
       padding: 40px 20px;

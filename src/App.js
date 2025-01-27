@@ -4,6 +4,7 @@ import { About } from './Components/About';
 import Head from './Components/Head';
 import { Main } from './Components/Main';
 import Skills from './Components/Skill';
+import Resume from './Components/Resume';
 
 
 const App = (props) => {
@@ -13,6 +14,7 @@ const App = (props) => {
             <Main />
             <About />
             <Skills />
+            <Resume/>
 
 
 

@@ -1,0 +1,61 @@
+/* Style the section title */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .section-title p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Resume item styling */
+  .resume-item {
+    margin-bottom: 20px;
+  }
+  
+  .resume-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .resume-item ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .resume-item ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Grid layout for the sections */
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-lg-6 {
+    width: 50%;
+    padding: 0 15px;
+  }
+  
+  /* Add responsive design */
+  @media (max-width: 768px) {
+    .col-lg-6 {
+      width: 100%;
+    }
+  }
+  
