@@ -10,8 +10,7 @@ export const Main = (props) => {
                 <div className={classes.textmain}>
                     <p>Welcome to my portfolio website!</p>
                     <h1 className={classes.name}>Hi, I'm Masoumeh <span className={classes.job}>Full-Stack Developer</span></h1>
-                    <span>Building a successful product is a challenge. I am highly energetic in user experience design,
-                         interfaces and web development.</span>
+                    <span className={classes.condation}>Climbing Under Any Conditions</span>
                 </div>
                 <div>
                         <img src={img} alt="" className={classes.triangle}></img>

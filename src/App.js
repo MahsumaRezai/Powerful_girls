@@ -3,17 +3,18 @@ import { Fragment } from 'react';
 import { About } from './Components/About';
 import Head from './Components/Head';
 import { Main } from './Components/Main';
-import { Active } from './Components/Active';
+import Skills from './Components/Skill';
 
 
 const App = (props) => {
     return (
         <Fragment>
-            <Head/>
-            <Main/>
-            <About/>
-            <Active/>
-          
+            <Head />
+            <Main />
+            <About />
+            <Skills />
+
+
 
         </Fragment>
     );

@@ -1,62 +1,35 @@
-import classes from './Skill.module.css'
 
-export const Active = (props) => {
+import React from 'react';
+import { Fragment } from 'react';
+import './Skill.css';
+
+
+
+const Active = ({ skillName, percentage }) => {
     return (
-        <div className={classes.cardskill}>
-            <div className={classes.textabout}>
-                <h1 className={classes.title}>Skills</h1>
+        <Fragment>
+
+            <div className="progress">
+                <span className="skill">
+                    <span>{skillName}</span> <i className="val">{percentage}%</i>
+                </span>
+                <div className="progress-bar-wrap">
+                    <div
+                        className="progress-bar"
+                        role="progressbar"
+                        aria-valuenow={percentage}
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style={{ width: `${percentage}%` }} // Dynamically set the width based on percentage
+                    ></div>
+                </div>
             </div>
 
-            <div className={classes.wapperskill}>
-                <div className={classes.skill}>
-                    <p>HTML</p>
-                </div>
-                <div className={classes.skill}>
-                    <p>CSS</p>
+        </Fragment>
 
 
-                </div>
-                <div className={classes.skill}>
-                    <p>SCSS</p>
 
-                </div>
-                <div className={classes.skill}>
-                    <p>JAVASCRIPT</p>
+    );
+};
 
-                </div>
-                <div className={classes.skill}>
-                    <p>Type script</p>
-
-                </div>
-
-            </div>
-            <div className={classes.wapperskill}>
-                <div className={classes.skill}>
-                    <p>React js</p>
-
-                </div>
-                <div className={classes.skill}>
-                    <p>Php</p>
-
-                </div>
-                <div className={classes.skill}>
-                    <p>
-                        Next js</p>
-
-                </div>
-                <div className={classes.skill}>
-                    <p>Bootstrap</p>
-
-                </div>
-                <div className={classes.skill}>
-                    <p>
-                        Tailwind</p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-    )
-}
+export default Active;

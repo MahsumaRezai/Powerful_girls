@@ -12,7 +12,7 @@
 .triangle{
    
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    border: 20px solid yellowgreen;
+    border: 20px solid #4caf50;;
     height: 550px;
            
 }
@@ -25,16 +25,25 @@
     color: wheat;
     
 }
+.textmain p {
+    font-size: 25px;
+    font-weight: bold;
+
+}
 .name {
     font-size: 40px;
     font-weight: bold;
 
 }
 .job {
-    color: yellowgreen
+    color: #4caf50;
+}
+.condation {
+    font-size: 25px;
+    font-weight: bold
 }
 /* res */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1280px) {
     .main {
       padding: 40px 20px;
       flex-direction: column
